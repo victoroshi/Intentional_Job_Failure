@@ -5,10 +5,10 @@ jobs:
     docker:
       - image: cimg/node:19.5.0
     steps:
-      - run: exit 1
+      - run: exit 0
       - run:
           name: on error
-          command: echo "Hello Error!"
+          command: echo "NO Error!"
           when: on_fail
 
 workflows:
