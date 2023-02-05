@@ -5,7 +5,7 @@ jobs:
     docker:
       - image: cimg/node:19.5.0
     steps:
-      - run: exit 3
+      - run: echo "GOOD JOB"
       - run:
           name: on error
           command: echo "Error! Found"
